@@ -26,11 +26,11 @@ console.log(post);
 
     }, []);
 
-    return (
+    return(
         <div className="factDiv">
         <div className="postDiv">
-        <h1>{post.title}</h1>
-        <p>{post.content}</p>
+        <h1>{!post ? "loading..." : post.title}</h1>
+        <p>{!post ? "loading..." : post.content}</p>
             </div>
         </div>
     )
