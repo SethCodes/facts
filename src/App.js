@@ -10,7 +10,7 @@ import Posts from './Posts';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Header />
     <div className="App">
     <Switch>

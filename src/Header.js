@@ -21,9 +21,9 @@ const handleClick = (e) => {
             <p className="text-center">Would you like to know some fun facts about Web Developers? Click an option below to learn a few things.</p>
         </div>
            <div className="" id="buttons">
-               <a href={'/' + Facts[0].id} className="btn btn-outline-dark" onClick={handleClick}>Fact 1</a>
-               <a href={'/' + Facts[1].id} className="btn btn-outline-dark" onClick={handleClick}>Fact 2</a>
-               <a href={'/' + Facts[2].id} className="btn btn-outline-dark" onClick={handleClick}>Fact 3</a>
+               <a href={'/facts/' + Facts[0].id} className="btn btn-outline-dark" onClick={handleClick}>Fact 1</a>
+               <a href={'/facts/' + Facts[1].id} className="btn btn-outline-dark" onClick={handleClick}>Fact 2</a>
+               <a href={'/facts/' + Facts[2].id} className="btn btn-outline-dark" onClick={handleClick}>Fact 3</a>
            </div></div>
            <img src={Wave} alt=""/>
         </div>
