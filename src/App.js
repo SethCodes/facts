@@ -10,12 +10,12 @@ import Posts from './Posts';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Header />
     <div className="App">
     <Switch>
-      <Route exact path='/' component={Home}/>
-      <Route path='/:post_id' component={Posts}/>
+      <Route exact path='/facts/' component={Home}/>
+      <Route path='/facts/:post_id' component={Posts}/>
     </Switch>
     </div>
     <Footer />

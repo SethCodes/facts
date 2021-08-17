@@ -15,7 +15,6 @@ const Posts = (props) => {
     let id = props.match.params.post_id;
 
     const fact = Facts.filter(fact => fact.id == id);
-    console.log(fact[0]);
 
 
     useEffect(() => {
@@ -24,13 +23,13 @@ const Posts = (props) => {
         setPost(fact[0]);
 console.log(post);
 
-    }, []);
+    }, [fact]);
 
     return(
         <div className="factDiv">
         <div className="postDiv">
-        <h1>{!post ? "loading..." : post.title}</h1>
-        <p>{!post ? "loading..." : post.content}</p>
+        <h1>{post.title}</h1>
+        <p>{post.content}</p>
             </div>
         </div>
     )
