@@ -18,7 +18,7 @@ const handleClick = (e) => {
         <div id="header">
         <div className="headDiv">
         <div className="headCont text-center">
-        <Link to='/'>
+        <Link to='/facts/'>
             <h1 className="">header component</h1></Link>
             <p className="text-center">Would you like to know some fun facts about Web Developers? Click an option below to learn a few things.</p>
         </div>
