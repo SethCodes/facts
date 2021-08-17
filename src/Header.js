@@ -15,7 +15,7 @@ const Header = () => {
           <Link to={"/facts/"}>
             <h1 className="">Fun Facts About Web Developers</h1>
           </Link>
-          <p className="text-center">
+          <p className="text-center lead">
             Would you like to know some fun facts about Web Developers? Click an
             option below to learn a few things.
           </p>
